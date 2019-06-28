@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9GR-Or-3bi">
+                                <rect key="frame" x="58" y="353" width="298" height="31"/>
+                                <connections>
+                                    <action selector="rangeSliderChanged" destination="BYZ-38-t0r" eventType="valueChanged" id="qVi-Y5-g5K"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1M-t9-ZZg">
+                                <rect key="frame" x="127.66666666666669" y="463" width="159" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="New Random Number"/>
+                                <connections>
+                                    <action selector="newRandomNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="hOZ-7B-ZqK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJ9-rI-XHC">
+                                <rect key="frame" x="108.66666666666669" y="243" width="197" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efD-wc-6Nk">
+                                <rect key="frame" x="182.66666666666666" y="320" width="49" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="t1M-t9-ZZg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Q4-YV-9Sy"/>
+                            <constraint firstItem="9GR-Or-3bi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="3qo-tx-cBO"/>
+                            <constraint firstItem="9GR-Or-3bi" firstAttribute="top" secondItem="sJ9-rI-XHC" secondAttribute="bottom" constant="80" id="Ig1-rj-ami"/>
+                            <constraint firstItem="sJ9-rI-XHC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="aKn-2P-8QM"/>
+                            <constraint firstItem="9GR-Or-3bi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b9M-p9-oWF"/>
+                            <constraint firstItem="efD-wc-6Nk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="brw-nt-pt2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="sJ9-rI-XHC" secondAttribute="trailing" constant="60" id="cI9-tQ-DGa"/>
+                            <constraint firstItem="9GR-Or-3bi" firstAttribute="top" secondItem="efD-wc-6Nk" secondAttribute="bottom" constant="12" id="fxO-qg-JNr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9GR-Or-3bi" secondAttribute="trailing" constant="60" id="gey-wo-cb7"/>
+                            <constraint firstItem="t1M-t9-ZZg" firstAttribute="top" secondItem="9GR-Or-3bi" secondAttribute="bottom" constant="80" id="hBp-eV-1Gg"/>
+                            <constraint firstItem="sJ9-rI-XHC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qFt-lV-Kd3"/>
+                            <constraint firstItem="9GR-Or-3bi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rt9-AG-owe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="randomNumberLabel" destination="sJ9-rI-XHC" id="ZaI-Hz-Xfz"/>
+                        <outlet property="rangeLabel" destination="efD-wc-6Nk" id="tdZ-0F-Udt"/>
+                        <outlet property="rangeSlider" destination="9GR-Or-3bi" id="H8G-yg-Dda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
